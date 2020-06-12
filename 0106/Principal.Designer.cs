@@ -40,7 +40,6 @@ namespace _0106
             this.tabControl.Controls.Add(abaTres);
 
             this.Controls.Add(this.tabControl);
-//sera que as coisas tem que ficar nessa ordem??
             MenuStrip menu = new MenuStrip();
             ToolStripMenuItem windowMenu = new ToolStripMenuItem("Window");
             menu.MdiWindowListItem = windowMenu;
@@ -48,7 +47,6 @@ namespace _0106
             windowMenu.DropDownItems.Add(windowNovoMenu);
             ToolStripMenuItem windowSalvarMenu = new ToolStripMenuItem("Salvar", null, new EventHandler(WindowSalvarMenu_Click));
             windowMenu.DropDownItems.Add(windowSalvarMenu);
-            //pra que serve?
             ((ToolStripDropDownMenu)(windowMenu.DropDown)).ShowImageMargin = false;
             ((ToolStripDropDownMenu)(windowMenu.DropDown)).ShowCheckMargin = true;
 
